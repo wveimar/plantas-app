@@ -15,7 +15,7 @@ export const DashboardRoutes = () => {
                 <Route path="plantas" element={<Plantas />} />
                 <Route path="insumos" element={<Insumos />} />
                 <Route path="search" element={<Search />} />
-                <Route path="planta" element={<Planta/>} />
+                <Route path="planta/:plantaId" element={<Planta/>} />
     
             </Routes>
             </div>

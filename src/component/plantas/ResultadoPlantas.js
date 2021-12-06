@@ -1,16 +1,16 @@
 import { getPlantasById } from "../selectors/getPlantasById"
+import { PlantaCard } from "./PlantaCard";
 
 export const ResultadoPlantas = ({ publisher }) => {
     const plantas = getPlantasById(publisher);
     return (
-        <div className="card-column">
-            <h1>lista de plantas - {publisher}</h1>
-
+        <div className="row rows-cols-1 row-cols-md-3 g-3">
             {
                 plantas.map(plantas => (
-                    <li key={plantas.id}>
-                        {plantas.superhero}
-                    </li>
+                    <PlantaCard
+                    key={plantas.id}
+                        {...plantas}
+                  />
                 ))
             }
         </div>
