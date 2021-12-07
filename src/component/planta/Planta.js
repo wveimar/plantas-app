@@ -1,13 +1,16 @@
+import { useState } from "react";
 import {useParams,Navigate,useNavigate} from "react-router-dom"
 import { getPlantasById } from "../selectors/getPlantasById";
 
 export const Planta = () => {
+    const  [counter, setCounter] = useState(0)
     const {plantaId} = useParams();
     const navigate = useNavigate();
     const plantas = getPlantasById(plantaId);
 
     const handleReturn = () => {
-        navigate(-1);
+        //navigate(-1);
+        setCounter(counter +1);
     }
    
     if (!plantas){
@@ -51,7 +54,7 @@ export const Planta = () => {
             <button 
             className="btn btn-outline-info"
             onClick={handleReturn}
-            >Regresar</button>
+            >Regresar{counter}</button>
             
            
         </div>
