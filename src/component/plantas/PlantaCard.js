@@ -27,7 +27,7 @@ export const PlantaCard = ({
                         <small className="text-muted">{first_appearance}</small>
                     </p>
 
-                    <Link to={`/planta/${id} `}>Mas..</Link>
+                    <Link to={`/planta/${id}`}>Mas..</Link>
                 </div>
 
 
