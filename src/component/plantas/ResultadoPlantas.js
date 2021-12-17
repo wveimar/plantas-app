@@ -3,8 +3,8 @@ import { PlantaCard } from "./PlantaCard";
 import {getPlantasByFamilia} from '../selectors/getPlantasByFamilia';
 
 
-export const ResultadoPlantas = ({ publisher }) => {
-    const plantas = useMemo(()=> getPlantasByFamilia(publisher),[publisher]);
+export const ResultadoPlantas = ({ familia }) => {
+    const plantas = useMemo(()=> getPlantasByFamilia(familia),[familia]);
     
     
     return (

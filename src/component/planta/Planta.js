@@ -21,12 +21,10 @@ export const Planta = () => {
     }
     const {
         id,
-        superhero,
-        publisher,
-        alter_ego,
-        first_appearance,
-        characters
-
+        nombreCientifico,
+        nombre,
+        familia,
+        variedad
     } = plantas;
 
     const imagePath = `/assets/${id}.jpg`;
@@ -37,20 +35,19 @@ export const Planta = () => {
             <div className="col-4">
                 <img
                     src={imagePath}
-                    alt={superhero}
+                    alt={nombre}
                     className="img-thumbnail animate__animated animate__fadeInLeft"
                 />
             </div>
             <div className="col-8">
-                <h3>{superhero}</h3>
+                <h3>{nombre}</h3>
                 <ul className="list-group list-group-flush">
-                    <li className="list-group-item"><b>alter ego: </b>{alter_ego}</li>
-                    <li className="list-group-item"><b>first Appearance: </b>{first_appearance}</li>
-                    <li className="list-group-item"><b>publisher: </b>{publisher}</li>
-
+                    <li className="list-group-item"><b>Nombre Cientifico: </b>{nombreCientifico}</li>
+                    <li className="list-group-item"><b>Familia: </b>{familia}</li>
+                    <li className="list-group-item"><b>Variedad: </b>{variedad}</li>
                 </ul>
-                <h5>characters</h5>
-                <p>{characters}</p>
+                <h5>Familia</h5>
+                <p>{familia}</p>
             </div>
             <h1>Planta</h1>
             <button

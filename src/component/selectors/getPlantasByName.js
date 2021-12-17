@@ -10,6 +10,6 @@ export const getPlantasByName = ( name = '') => {
     }
 
     name = name.toLowerCase();
-    return ListaPlantas.filter(plantas => plantas.superhero.toLowerCase().includes(name));
+    return ListaPlantas.filter(plantas => plantas.nombre.toLowerCase().includes(name));
 
 }

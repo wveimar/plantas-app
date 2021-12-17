@@ -1,12 +1,14 @@
 import { ListaPlantas } from "../data/ListaPlantas"
 
 
-export const getPlantasByFamilia = ( publisher ) => {
+export const getPlantasByFamilia = ( familia ) => {
 
-    const validPublishers = ['DC Comics', 'Marvel Comics'];
-    if( !validPublishers.includes( publisher ) ) {
-        throw new Error( `${ publisher } is not a valid publisher` );
-    }
+     const validPublishers = ['1', '2'];
+     console.log(validPublishers);
+     console.log(familia);
+    // if( !validPublishers.includes( familia ) ) {
+    //     throw new Error( `${ familia } is not a valid publisher` );
+    // }
 
-    return ListaPlantas.filter( Plantas => Plantas.publisher === publisher );
+    return ListaPlantas.filter( Plantas => Plantas.familia === familia );
 }
