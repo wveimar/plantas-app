@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 export const PlantaCard = ({
     id,
-    nombreCientifico,
     nombre,
     familia,
     variedad
@@ -16,18 +15,17 @@ export const PlantaCard = ({
                 </div>
                 <div className="col-8">
                     <div className="card-body">
-                    <h5 className="cart-title">{nombre}</h5>
-                    <p className="card-text">{variedad}</p>
-                    {
-                        (nombre !== variedad)
-                        && <p className="card-muted">{nombre}</p>
-                    }
-                    <p className="card-text">
-                        <small className="text-muted">{familia}</small>
-                    </p>
-
-                    <Link to={`/planta/${id}`}>Mas..</Link>
-                </div>
+                        <h5 className="cart-title">{nombre}</h5>
+                        <p className="card-text">{variedad}</p>
+                        {
+                            (nombre !== variedad)
+                            && <p className="card-muted">{nombre}</p>
+                        }
+                        <p className="card-text">
+                            <small className="text-muted">{familia}</small>
+                        </p>
+                        <Link to={`/planta/${id}`}>Mas..</Link>
+                    </div>
                 </div>
 
 

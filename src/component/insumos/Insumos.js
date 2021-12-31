@@ -4,7 +4,7 @@ export const Insumos = () => {
     return (
         <div>
             <h1>Plantas</h1>
-            <ResultadoPlantas publisher="2"/>
+            <ResultadoPlantas familia="2"/>
 
         </div>
     )

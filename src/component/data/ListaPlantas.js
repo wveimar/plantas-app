@@ -6,7 +6,6 @@ export const ListaPlantas = [
         'familia':'1', 
         'variedad':'Batavia',
         'ciclo':'60'
-        
     },
     {
         'id': '02lechuga',
